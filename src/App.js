@@ -1,7 +1,8 @@
 import './App.css';
 import Expenses from "./components/Expenses/Expenses.js"
+import NewExpense from "./components/NewExpense/NewExpense"
 
-function App() {
+const App = () => {
 
   const expenses = [
     { id: 'e1', title: 'Toilet Paper', amount: 94.12, date: new Date(2020, 7, 14) },
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Let's Get Started!</h2>
+      <NewExpense />
       <Expenses expenses={expenses}/>
     </div>
   );
